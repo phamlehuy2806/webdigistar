@@ -7,19 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-    // public show:boolean = false;
-    // public buttonName:any = 'Show';
+    public show:boolean = false;
+    public buttonName:any = 'Show';
     constructor() { }
 
     ngOnInit(): void {
     }
 
-    // toogle(){
-    //     this.show = !this.show;
-    //     if(this.show)
-    //         this.buttonName = 'Hide';
-    //     else 
-    //         this.buttonName = 'Show';
-    // }
+    toogle(){
+        this.show = !this.show;
+        if(this.show)
+            this.buttonName = 'Giới Thiệu';
+        else 
+            this.buttonName = 'Liên Hệ';
+    }
 
 }

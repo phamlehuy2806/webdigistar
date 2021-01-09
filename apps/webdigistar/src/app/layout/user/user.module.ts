@@ -11,8 +11,8 @@ import { FooterComponent } from './components/footer/footer.component';
   declarations: [UserComponent,NavbarComponent,FooterComponent],
   imports: [
     CommonModule,
-    UserRoutingModule
-  ]
+    UserRoutingModule,
+    ]
 })
   
 export class UserModule { }
