@@ -39,20 +39,30 @@
     text-align: center;
 }
 
-.service {
+.service,
+.process {
     margin-top: 3rem;
     text-align: center;
 }
 
-.service__title {
+.service__title,
+.process__title {
     font-size: 3rem;
     font-weight: bold;
     color: #333333;
 }
 
-.service__text {
-    font-size: 2rem;
-    margin-top: 3rem;
+.service__content,
+.progress__content {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.progress__content {
+    padding-top: 2rem;
+    width: 50%;
+    margin: 0 auto;
+    word-wrap: break-word;
 }
 
 .card {
