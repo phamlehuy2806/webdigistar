@@ -1,12 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+footer{
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+}
+
 .footer_first {
     border-top: 2px solid rgba(24, 23, 23, 0.1);
-    // display: flex;
-    // justify-content: space-around;
-    // align-items: center;
-    // min-height: 2vh;
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 2vh;
     height: 10vh;
+    
 }
+
 
 .container {
     max-width: 1220px;
