@@ -9,7 +9,7 @@
 .bg-img {
     position: relative;
     width: 100vw;
-    height: 45vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,8 +35,10 @@
     position: relative;
     color: #fff;
     font-size: 5rem;
-    line-height: 0.9;
+    line-height: 1.2;
     text-align: center;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
 }
 
 .service,
@@ -136,7 +138,7 @@
 }
 
 .content {
-    font-family: 'Lato', sans-serif;
+    font-family: "Montserrat", sans-serif;
     width: 80%;
     height: auto;
     letter-spacing: normal;
@@ -152,7 +154,7 @@
 }
 
 .card__text {
-    font-family: 'Lato', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: .85rem;
     font-weight: bold;
     transition: all .5s ease;
