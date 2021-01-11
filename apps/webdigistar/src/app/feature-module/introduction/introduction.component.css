@@ -143,7 +143,7 @@
     height: auto;
     letter-spacing: normal;
     font-size: 1.2rem;
-    text-align: match-parent;
+    text-align: justify;
     line-height: 2rem;
 }
 
@@ -164,4 +164,43 @@
 .title {
     margin-top: 2rem;
     font-size: 2rem;
+}
+
+.timeline {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.timeline__items {
+    position: relative;
+}
+
+
+/* .dot::after {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+} */
+
+.timeline__content {
+    display: block;
+    word-wrap: break-word;
+    width: 40%;
+    text-align: justify;
+}
+
+.timeline__items1 {
+    padding-left: 50%;
+    line-height: 1.2;
+}
+
+.timeline__items3 {
+    padding-left: 50%;
+}
+
+.timeline__items--title {
+    font-size: 20px;
 }
