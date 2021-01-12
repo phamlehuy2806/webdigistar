@@ -8,11 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 // import {  } from './components/nav-bar'
 
 @NgModule({
-  declarations: [UserComponent,NavbarComponent,FooterComponent],
-  imports: [
-    CommonModule,
-    UserRoutingModule
-  ]
+  declarations: [UserComponent, NavbarComponent, FooterComponent],
+  imports: [CommonModule, UserRoutingModule],
 })
-  
-export class UserModule { }
+export class UserModule {}
