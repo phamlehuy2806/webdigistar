@@ -9,7 +9,7 @@
 .bg-img {
     position: relative;
     width: 100vw;
-    height: 45vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,24 +35,38 @@
     position: relative;
     color: #fff;
     font-size: 5rem;
-    line-height: 0.9;
+    line-height: 1.2;
     text-align: center;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
 }
 
-.service {
+.service,
+.process {
     margin-top: 3rem;
     text-align: center;
 }
 
-.service__title {
+.service__title,
+.process__title {
     font-size: 3rem;
     font-weight: bold;
     color: #333333;
 }
 
-.service__text {
-    font-size: 2rem;
-    margin-top: 3rem;
+.service__content,
+.progress__content {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.progress__content {
+    padding-top: 2rem;
+    width: 50%;
+    margin: 0 auto;
+    word-wrap: break-word;
+    text-align: center;
+    line-height: 1.2;
 }
 
 .card {
@@ -66,7 +80,7 @@
 
 .card__content {
     background-color: #FFFFFF;
-    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     font-family: 'Lora', serif;
     margin: 25px 0;
     /* min-height: 515px;
@@ -126,12 +140,12 @@
 }
 
 .content {
-    font-family: 'Lato', sans-serif;
+    font-family: "Montserrat", sans-serif;
     width: 80%;
     height: auto;
     letter-spacing: normal;
     font-size: 1.2rem;
-    text-align: match-parent;
+    text-align: justify;
     line-height: 2rem;
 }
 
@@ -142,7 +156,7 @@
 }
 
 .card__text {
-    font-family: 'Lato', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: .85rem;
     font-weight: bold;
     transition: all .5s ease;
@@ -152,4 +166,120 @@
 .title {
     margin-top: 2rem;
     font-size: 2rem;
+}
+
+.timeline {
+    position: relative;
+    width: 78%;
+    margin: 0 auto;
+}
+
+.timeline__items {
+    position: relative;
+}
+
+.content-block {
+    margin-top: 1rem;
+    word-wrap: break-word;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+.dot::after {
+    content: " ";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #000000;
+    border-radius: 50%;
+    left: 45%;
+    top: 1%;
+}
+
+.dot1::before {
+    content: " ";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #000000;
+    border-radius: 50%;
+    left: 45%;
+    top: 36%;
+}
+
+.dot2::after {
+    content: " ";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #000000;
+    border-radius: 50%;
+    left: 45%;
+    top: 64%;
+}
+
+.dot3::before {
+    content: " ";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #000000;
+    border-radius: 50%;
+    left: 45%;
+    top: 86%;
+}
+
+.line::before {
+    content: " ";
+    position: absolute;
+    width: 3px;
+    height: 155px;
+    background-color: #000000;
+    left: 45.5%;
+    top: 8%;
+}
+
+.line1::after {
+    content: " ";
+    position: absolute;
+    width: 3px;
+    height: 155px;
+    background-color: #000000;
+    left: 45.5%;
+    top: 34%;
+}
+
+.line2::before {
+    content: " ";
+    position: absolute;
+    width: 3px;
+    height: 155px;
+    background-color: #000000;
+    left: 45.5%;
+    top: 55%;
+}
+
+.timeline__content {
+    display: block;
+    word-wrap: break-word;
+    width: 40%;
+    text-align: justify;
+}
+
+.timeline__items1 {
+    padding-left: 50%;
+    line-height: 1.2;
+}
+
+.timeline__items3 {
+    padding-left: 50%;
+}
+
+.timeline__items--title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.progress-bar {
+    margin-top: 2rem;
 }
