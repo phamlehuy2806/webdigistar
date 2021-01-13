@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'webdigistar';
+  token: string;
+  onRecaptchaSuccess(token: string) {
+    this.token = token;
+  }
 }
