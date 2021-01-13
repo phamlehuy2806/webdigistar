@@ -34,7 +34,7 @@ export class RecaptchaDirective implements OnInit, OnDestroy {
   }
 
   private registerCaptchaCallback() {
-    window.recaptchaCallback = () => {
+    window['recaptchaCallback'] = () => {
       const config = {
         sitekey: environment.recaptchaSitekey,
         callback: this.onSuccessCallback.bind(this),
@@ -46,7 +46,7 @@ export class RecaptchaDirective implements OnInit, OnDestroy {
   }
 
   private renderCaptcha(config: any): number {
-    return window.grecaptcha.render(this.elementRef.nativeElement, config);
+    return window['grecaptcha'].render(this.elementRef.nativeElement, config);
   }
 
   private addScript() {
