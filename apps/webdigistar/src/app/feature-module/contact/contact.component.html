@@ -1,1 +1,27 @@
-<p>contact works!</p>
+<div class="contact-form">
+    <h1>Hãy Liên hệ với chúng tôi!</h1>
+    <span>Nếu bạn có bất kỳ câu hỏi nào, xin đừng ngần ngại gửi cho chúng tôi một tin nhắn. Chúng tôi sẵn sàng giải
+      đáp cho các bạn</span>
+    <form (ngSubmit)="onSubmit()">
+      <div class="txtb">
+        <label>Tên:</label>
+        <input formControlName="name" type="text" name="" value="">
+      </div>
+
+      <div class="txtb">
+        <label>Email :</label>
+        <input formControlName="email" type="email" name="" value="">
+      </div>
+
+      <div class="txtb">
+        <label>Chủ đề:</label>
+        <input formControlName="subject" type="text" name="" value="">
+      </div>
+
+      <div class="txtb">
+        <label>Message :</label>
+        <textarea formControlName="message"></textarea>
+      </div>
+      <button class="btn"  type="submit" [disabled]="!contactForm.valid">Send</button>
+    </form>
+  </div>
