@@ -4,6 +4,8 @@
 
 export const environment = {
   production: false,
+  recaptchaSitekey: '6LeO6SoaAAAAADUtH70AmfCrXMNjTD3iAKFHUejm',
+  recaptchaSecretkey: '6LeO6SoaAAAAAPEMSd_NhGByL97UiY5NnDN70zxC'
 };
 
 /*

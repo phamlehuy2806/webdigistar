@@ -14,5 +14,4 @@ import { FooterComponent } from './components/footer/footer.component';
     UserRoutingModule,
     ]
 })
-  
-export class UserModule { }
+export class UserModule {}

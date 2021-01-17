@@ -20,7 +20,9 @@
               "apps/webdigistar/src/favicon.ico",
               "apps/webdigistar/src/assets"
             ],
-            "styles": ["apps/webdigistar/src/styles.scss"],
+            "styles": [
+              "apps/webdigistar/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -82,7 +84,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/webdigistar"],
+          "outputs": [
+            "coverage/apps/webdigistar"
+          ],
           "options": {
             "jestConfig": "apps/webdigistar/jest.config.js",
             "passWithNoTests": true
@@ -111,7 +115,9 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/webdigistar-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/webdigistar-e2e/**/*.{js,ts}"
+            ]
           }
         }
       }
@@ -124,12 +130,16 @@
       "architect": {
         "build": {
           "builder": "@nrwl/node:build",
-          "outputs": ["{options.outputPath}"],
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "outputPath": "dist/apps/api",
             "main": "apps/api/src/main.ts",
             "tsConfig": "apps/api/tsconfig.app.json",
-            "assets": ["apps/api/src/assets"]
+            "assets": [
+              "apps/api/src/assets"
+            ]
           },
           "configurations": {
             "production": {
@@ -154,12 +164,16 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/api/**/*.ts"]
+            "lintFilePatterns": [
+              "apps/api/**/*.ts"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/api"],
+          "outputs": [
+            "coverage/apps/api"
+          ],
           "options": {
             "jestConfig": "apps/api/jest.config.js",
             "passWithNoTests": true
@@ -175,12 +189,16 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["libs/data/**/*.ts"]
+            "lintFilePatterns": [
+              "libs/data/**/*.ts"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/data"],
+          "outputs": [
+            "coverage/libs/data"
+          ],
           "options": {
             "jestConfig": "libs/data/jest.config.js",
             "passWithNoTests": true
@@ -190,7 +208,8 @@
     }
   },
   "cli": {
-    "defaultCollection": "@nrwl/angular"
+    "defaultCollection": "@nrwl/angular",
+    "analytics": "8862f51c-f1e1-4374-81cd-c57e9ff73b0c"
   },
   "schematics": {
     "@nrwl/angular": {
